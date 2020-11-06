@@ -23,7 +23,8 @@
 .top-wrapper h1{
  /* padding-top: 180px; */
   padding-top:20px;
-  padding-bottom:150px;
+  padding-bottom:70px;
+  padding-right:-10px;
   font-size:120px;
   font-family:serif;
   text-align:right;
