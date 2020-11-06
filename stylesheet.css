@@ -66,7 +66,7 @@
 }
 
 
-img{
+th{
   width:50%;
   height:50%;
 }
@@ -91,16 +91,6 @@ img{
 }
 
 
-.recruit-img{
-  width:600px;
-  height:409.187px;
-}
-
-.startup-img{
-  width:600px;
-  height:337.331px;
-}
-
 
 
 
@@ -117,9 +107,7 @@ img{
   font-size:60px;
 }
 
- /*.member{
-  flex-wrap:wrap;
-} */
+
 
 .profile{
    width:100%;
@@ -128,25 +116,6 @@ img{
   margin:80px 0;
 }
 
-
-
-
-
-.y{
-  width:443.921034px;
-  height:591.2px;
-}
-
-
-.m{
-  width:443.2px;
-  height:591.2px;
-}
-
-.s{
-  width:443.2px;
-  height:591.2px;
-}
 
 .contact-wrapper{
   text-align: center;
