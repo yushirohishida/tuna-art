@@ -24,17 +24,18 @@
  /* padding-top: 180px; */
   padding-top:20px;
   padding-bottom:150px;
-  font-size:65px;
+  font-size:120px;
   font-family:serif;
+  text-align:right;
  /* background-color:rgba(192,192,192,0.5); */
 }
 
-/* .top-wrapper p{
+.top-wrapper p{
   font-size:50px;
   background-color:rgba(255,255,255,0.5);
   font-family:serif;
-  text-align:center;
-} */
+  text-align:left;
+} 
 
 .contents-wrapper{
   background-color: #f7f7f7;
