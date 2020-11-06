@@ -280,6 +280,8 @@ li{
   .top-wrapper h1{
     padding-top:70px;
     padding-bottom:550px;
+    text-align:right;
+    font-family:serif;
   }
   
 /*  .top-wrapper p{
