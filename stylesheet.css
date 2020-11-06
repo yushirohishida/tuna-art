@@ -20,14 +20,19 @@
 /*  position:relative; */
 }
 
-.top-wrapper h1{
- /* padding-top: 180px; */
+.name {
   padding-top:20px;
   padding-bottom:70px;
   padding-right:-10px;
+  text-align:right;
+}
+
+.top-wrapper h1{
+ /* padding-top: 180px; */
+  
   font-size:120px;
   font-family:serif;
-  text-align:right;
+  
  /* background-color:rgba(192,192,192,0.5); */
 }
 
