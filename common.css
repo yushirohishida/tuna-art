@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.bold {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  display: block;
+  width: 100%;
+}
+
+button a:hover, #inquery__submit:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
+.br__pc {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .br__pc {
+    display: block;
+  }
+}
+/*# sourceMappingURL=common.css.map */

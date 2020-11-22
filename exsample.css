@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/*  ------------------------------------------
+
+
+BEMの考え方
+それぞれのブロックに名前をつけるときの考え方
+classではなくIDでつけること
+block__element--modifier
+
+
+------------------------------------------  */
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方
+入れ子
+
+
+------------------------------------------  */
+#block {
+  background: blue;
+}
+
+#block p {
+  background: #fff;
+}
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方
+&　（繋げる）
+
+
+------------------------------------------  */
+#block {
+  background: blue;
+}
+
+#block__element {
+  font-size: 1rem;
+}
+
+#block__element--modifier {
+  color: #000;
+}
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方
+変数
+
+
+------------------------------------------  */
+#block {
+  font-size: 10px;
+}
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方（条件分岐）
+if文
+
+
+------------------------------------------  */
+#block {
+  font-size: 20px;
+}
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方（繰り返し）
+for文
+
+
+------------------------------------------  */
+#block--1 {
+  width: 100px;
+}
+
+#block--2 {
+  width: 200px;
+}
+
+#block--3 {
+  width: 300px;
+}
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方（繰り返し）
+while文
+
+
+------------------------------------------  */
+#block__element--1 {
+  width: 100px;
+}
+
+#block__element--2 {
+  width: 200px;
+}
+
+#block__element--3 {
+  width: 300px;
+}
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方（繰り返し）
+each文
+
+
+------------------------------------------  */
+#block1__element {
+  background-image: url("/images/block1.png");
+}
+
+#block2__element {
+  background-image: url("/images/block2.png");
+}
+
+#block3__element {
+  background-image: url("/images/block3.png");
+}
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方（関数）
+関数の作成  @mixin
+関数の呼び出し @include
+
+
+------------------------------------------  */
+/* $break-point以下の時に@contentを適用 */
+/* $break-point以上の時に@contentを適用 */
+/* $break-point-min以上、$break-point-max以下の時に@contentを適用 */
+/* 使用例 */
+@media screen and (max-width: 640px) {
+  #block {
+    /* 640px以下のとき */
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #block {
+    /* 1024px以上のとき */
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  #block {
+    /* 640px以上1024px以下のとき */
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=exsample.css.map */
