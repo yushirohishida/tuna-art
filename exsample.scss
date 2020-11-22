@@ -1,0 +1,163 @@
+/*  ------------------------------------------
+
+
+BEMの考え方
+それぞれのブロックに名前をつけるときの考え方
+classではなくIDでつけること
+block__element--modifier
+
+
+------------------------------------------  */
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方
+入れ子
+
+
+------------------------------------------  */
+#block{
+    background: blue;
+    p{
+        background: #fff;
+    }
+}
+
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方
+&　（繋げる）
+
+
+------------------------------------------  */
+#block{
+    background: blue;
+
+    &__element{
+        font-size: 1rem;
+
+        &--modifier{
+            color: #000;
+        }
+
+    }
+}
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方
+変数
+
+
+------------------------------------------  */
+//変数に値を代入
+$ver: 10px;
+#block{
+    //変数を代入
+    font-size: $ver;
+}
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方（条件分岐）
+if文
+
+
+------------------------------------------  */
+$ver: 20;
+#block{
+    @if $ver < 20 {
+        font-size: 16px;
+    } @else if $ver == 20 {
+        font-size: 20px;
+    } @else {
+        font-size: 24px;
+    }
+}
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方（繰り返し）
+for文
+
+
+------------------------------------------  */
+@for $i from 1 through 3 {
+   #block--#{$i} {width: 100px * $i;}
+}
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方（繰り返し）
+while文
+
+
+------------------------------------------  */
+$i: 1;
+@while $i < 4 {
+  #block__element--#{$i} {width: 100px * $i;}
+  $i: $i + 1;
+}
+
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方（繰り返し）
+each文
+
+
+------------------------------------------  */
+$list: block1, block2, block3;
+@each $ver in $list {
+    ##{$ver}__element {
+      background-image: url('/images/#{$ver}.png');
+    }
+  }
+/*  ------------------------------------------
+
+
+SCSS 基本の書き方（関数）
+関数の作成  @mixin
+関数の呼び出し @include
+
+
+------------------------------------------  */
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 640px;
+
+/* $break-point以下の時に@contentを適用 */
+@mixin max-screen($break-point) { 
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+/* $break-point以上の時に@contentを適用 */
+@mixin min-screen($break-point) { 
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+/* $break-point-min以上、$break-point-max以下の時に@contentを適用 */
+@mixin screen($break-point-min, $break-point-max) { 
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+/* 使用例 */
+#block {
+  @include max-screen($breakpoint-mobile) { /* 640px以下のとき */
+    width: 100%;
+  }
+  @include min-screen($breakpoint-tablet) { /* 1024px以上のとき */
+    width: 50%;
+  }
+  @include screen($breakpoint-mobile, $breakpoint-tablet) { /* 640px以上1024px以下のとき */
+    width: 80%;
+  }
+}

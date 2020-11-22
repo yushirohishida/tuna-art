@@ -1,0 +1,114 @@
+#works{
+    &__col{
+        position: relative;
+        p{
+            padding: 40px 25px;
+            font-size: 16px;
+            line-height: $lh;
+            color:$font-color;
+        }
+        #works__p {
+            padding-top: 0;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        img{
+            width: 240px;
+            height: auto;
+        }
+    }
+    &__p--lineblock{
+        border: 2px solid #F15A24;
+        width: calc(100% - #{$gatter} * 2);
+        margin: 0 auto 100px;
+        position: relative;
+        padding: 20px 20px;
+        text-align: left;
+        img{
+            width: 310px;
+            position: absolute;
+            top:-23px;
+            margin: 0 auto;
+            // left:calc((100% - 310px) / 2);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    #works {
+        margin-bottom: 130px;
+        p {
+            text-align: center;
+        }
+        &__h2 {
+            height: auto;
+            padding: 40px 0;
+            img {
+                width: 300px;
+            }
+        }
+        &__col {
+            #works__p--lineblock{
+                text-align: left;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    #works {
+        p {
+            width: 100%;
+            max-width: 960px;
+            padding:50px 50px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 18px;
+        }
+        &__h2 {
+            height: 350px;
+            img {
+                width: 300px;
+                left: calc(50%);
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+
+    #works {
+        &__h2 {
+            height: auto;
+            padding: 120px 0 45px;
+            img {
+                width: 336px;
+            }
+        }
+        p:nth-child(3){
+            max-width: 830px;
+            padding: 58px 80px;
+            img{
+                width: 450px;
+                top: -35px;
+            }
+        }
+    }
+
+}

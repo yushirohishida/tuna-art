@@ -1,0 +1,24 @@
+#footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 45px;
+    small{
+        font-size: 10px;    
+    }
+}
+#totop{
+    position: fixed;
+    z-index: 998;
+    bottom:75px;
+    right: 20px;
+    width: 46px;
+}
+
+@media screen and (min-width:1280px) {
+    #totop {
+        width: 78px;
+        bottom:100px;
+        right: 100px;
+    }
+}
