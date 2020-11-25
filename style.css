@@ -1,3 +1,13 @@
+//追加
+.toplogo {
+  width:942px;
+  height:197px;
+}
+
+//ここまで
+
+
+
 #header {
   position: fixed;
   top: 0;
@@ -366,6 +376,7 @@
     border-radius: 30px;
   }
 }
+
 
 #recommend {
   width: calc(100% - 20px * 2);
