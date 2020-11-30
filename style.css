@@ -1249,6 +1249,7 @@
 
 #inquery__h3 {
   margin-bottom: 30px;
+  text-align:center;
 }
 
 #inquery__ul {
@@ -1512,6 +1513,11 @@
 }
 
 #inquery__h3--contact-tel-num {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#inquery__h3--contact-mail-addr {
   font-size: 24px;
   font-weight: bold;
 }
