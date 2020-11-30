@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background: #000044;
+  background: #FFF;
   display: block;
   height: 44px;
   width: 100%;
@@ -1233,7 +1233,7 @@
 }
 
 #inquery {
-  background: #FFF;
+  background: #000044;
   padding: 60px 0 50px;
 }
 
