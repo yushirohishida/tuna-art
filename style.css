@@ -369,6 +369,32 @@
 }
 
 
+
+#work {
+  width: calc(100% - 20px * 2);
+  margin: 500px auto 120px;
+  padding-top: 20px;
+}
+
+#work__col--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+}
+
+#work__h3 {
+  width: 252px;
+  margin: 0 auto 10px;
+}
+
+
+
+
+
+
 #recommend {
   width: calc(100% - 20px * 2);
   margin: 500px auto 120px;
