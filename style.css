@@ -411,8 +411,10 @@
 }
 
 #recommend__h3 {
-  width: 252px;
+  width: 504px;
   margin: 0 auto 10px;
+  text-align:center;
+  font-weight:bold;
 }
 
 #recommend__h3 img {
@@ -498,9 +500,9 @@
 }
 
 #about__h2 {
-  width: 378px;
+  width: 504px;
   margin: 0 auto 30px;
-  font-family:bold;
+  font-weight:bold;
 }
 
 #about p {
