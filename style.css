@@ -498,8 +498,9 @@
 }
 
 #about__h2 {
-  width: 252px;
+  width: 378px;
   margin: 0 auto 30px;
+  font-family:bold;
 }
 
 #about p {
