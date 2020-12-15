@@ -17,7 +17,7 @@
   display: block;
   width: 100%;
   height: 22px;
-  #background-image: url(https://github.com/yushirohishida/tuna-art/blob/main/background_image1.JPG?raw=true);
+  background-image: url(https://github.com/yushirohishida/tuna-art/blob/main/background_image1.JPG?raw=true);
   background-position: bottom left;
   background-repeat: no-repeat;
 }
@@ -230,7 +230,7 @@
 
 #top {
   height: 667px;
-  background: url(https://github.com/yushirohishida/tuna-art/blob/main/background_image1.JPG?raw=true);
+  #background: url(https://github.com/yushirohishida/tuna-art/blob/main/background_image1.JPG?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -30px;
